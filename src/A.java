@@ -4,4 +4,5 @@ public class A {
         int z=x+y;
         System.out.println("Sum in Class A is "+z);
     }
+
 }

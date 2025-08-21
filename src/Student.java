@@ -1,31 +1,11 @@
-import java.sql.SQLOutput;
-
 public class Student {
-    int roll_no;
-    public String name;
-    static String sec="AI-A";
-    Student()
-    {
+   protected String address;
 
+    public Student(String address) {
+        this.address = address;
     }
-    Student(int r,String n)
+    public void show_address()
     {
-        int id=0;
-        System.out.println(id);
-        name=n;
-        roll_no=r;
+        System.out.println("Address is"+address);
     }
-    Student(Student s)
-    {
-        name=s.name;
-        roll_no=s.roll_no;
-
-    }
-    void display()
-    {
-
-        System.out.println("Name is "+name);
-        System.out.println("Roll NUmber is "+roll_no);
-    }
-
 }

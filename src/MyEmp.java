@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class MyEmp {
 
     public static void main(String[] args) {
