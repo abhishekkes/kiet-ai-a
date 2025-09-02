@@ -1,3 +1,5 @@
+package Unit1;
+
 import java.util.*;
 public class Calculator {
     public static void main(String[] args) {
@@ -8,15 +10,22 @@ public class Calculator {
         y=sc.nextInt();
         try
         {
+
             z=x/y;
             System.out.println("Exception not Occurs");
         }
-
-        catch(ArithmeticException e)
+        catch (ArithmeticException e)
+        {
+            System.out.println(e);
+        }
+        catch (NumberFormatException e)
         {
             System.out.println(e.getMessage());
         }
-
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
         finally {
             System.out.println(z);
         }
